@@ -1,0 +1,13 @@
+path: datasets
+
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: Wood_formwork
+  1: Plywood_formwork
+  2: Steel_formwork
+  3: Aluminium_formwork
+  4: Plastic_formwork
+  5: Coffor_formwork
