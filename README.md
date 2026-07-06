@@ -89,7 +89,7 @@ Formwork-Detection-Using-YOLO11/
 - Visual evaluation using PR curves and confusion matrix
 - Custom dataset pipeline with YOLO format
 
-- ### ▶️ Demo Images
+### ▶️ Demo Images
 
 <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
 
@@ -101,6 +101,15 @@ Formwork-Detection-Using-YOLO11/
 
 </div>
 
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/iammanoj-dev/Multi-Class-Formwork-Detection-Using-YOLO11s.git
+
+cd Formwork-Detection-Using-YOLO11
+
+pip install -r requirements.txt
+```
 
 ### 🏁 Outcome
 The model successfully detects multiple types of formwork with good accuracy and can be extended for real-world construction site automation systems.
