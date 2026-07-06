@@ -23,45 +23,53 @@ The dataset was manually annotated using LabelImg and structured into train, val
 
 ```text
 Formwork-Detection-Using-YOLO11/
-│
+
 ├── datasets/
 │   ├── images/
-│   │   ├── train/
-│   │   ├── val/
-│   │   └── test/
+│   │   ├── train/              # Training images
+│   │   ├── val/                # Validation images
+│   │   └── test/               # Test images
+│   │
 │   ├── labels/
-│   ├── classes.txt
-│   └── data.yaml
+│   │   ├── train/              # YOLO training labels
+│   │   ├── val/                # YOLO validation labels
+│   │   └── test/               # YOLO test labels
+│   │
+│   ├── classes.txt             # List of formwork classes
+│   └── data.yaml               # Dataset configuration
 │
 ├── demo/
-│   ├── aluminum_024.jpg
-│   ├── coffor_003.jpg
-│   ├── plastic_045.jpg
-│   ├── steel_012.jpg
-│   └── wood_080.jpg
+│   ├── aluminum_024.jpg        # Aluminium formwork prediction
+│   ├── coffor_003.jpg          # Coffor formwork prediction
+│   ├── plastic_045.jpg         # Plastic formwork prediction
+│   ├── steel_012.jpg           # Steel formwork prediction
+│   └── wood_080.jpg            # Wood formwork prediction
 │
 ├── models/
-│   └── best.pt
-│
-├── runs/
-│   └── detect/
-│       ├── Formwork_Final/
-│       ├── HighConfidence/
-│       └── test_predictions/
-│
-├── scripts/
-│   ├── inference.py
-│   ├── merge_dataset.py
-│   ├── find_missing_labels.py
-│   └── check_predictions.py
+│   └── best.pt                 # Trained YOLO11 model weights
 │
 ├── notebooks/
-│   └── formwork-detection.ipynb
+│   └── formwork-detection.ipynb # Complete training notebook
 │
-├── README.md
-└── requirements.txt
+├── results/
+│   ├── results.png             # Training metrics visualization
+│   ├── results.csv             # Training log
+│   ├── confusion_matrix.png    # Confusion matrix
+│   ├── BoxF1_curve.png         # F1 score curve
+│   ├── BoxPR_curve.png         # Precision–Recall curve
+│   ├── BoxP_curve.png          # Precision curve
+│   └── BoxR_curve.png          # Recall curve
+│
+├── scripts/
+│   ├── inference.py            # Run inference on images/folders
+│   ├── merge_dataset.py        # Merge labeled datasets
+│   ├── find_missing_labels.py  # Detect missing annotations
+│   └── check_predictions.py    # Visualize prediction results
+│
+├── README.md                   # Project documentation
+├── requirements.txt            # Python dependencies
+└── LICENSE                     # Project license (optional)
 ```
-
 ### ⚙️ Methodology
 - Model: YOLO11s (Ultralytics)
 - Training: 200 epochs with AdamW optimizer
