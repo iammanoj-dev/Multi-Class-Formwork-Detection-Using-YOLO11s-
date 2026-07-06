@@ -19,6 +19,48 @@ The dataset contains labeled images of 6 classes:
 
 The dataset was manually annotated using LabelImg and structured into train, validation, and test sets.
 
+## 📁 Project Structure
+
+
+Formwork-Detection-Using-YOLO11/
+│
+├── datasets/
+│ ├── images/
+│ │ ├── train/
+│ │ ├── val/
+│ │ └── test/
+│ ├── labels/
+│ ├── classes.txt
+│ └── data.yaml
+│
+├── demo/
+│ ├── aluminum_024.jpg
+│ ├── coffor_003.jpg
+│ ├── plastic_045.jpg
+│ ├── steel_012.jpg
+│ └── wood_080.jpg
+│
+├── models/
+│ └── best.pt
+│
+├── runs/
+│ ├── detect/
+│ │ ├── Formwork_Final/
+│ │ ├── HighConfidence/
+│ │ └── test_predictions/
+│
+├── scripts/
+│ ├── inference.py
+│ ├── merge_dataset.py
+│ ├── find_missing_labels.py
+│ ├── check_predictions.py
+│
+├── notebooks/
+│ └── formwork-detection.ipynb
+│
+├── README.md
+└── requirements.txt
+
 ### ⚙️ Methodology
 - Model: YOLO11s (Ultralytics)
 - Training: 200 epochs with AdamW optimizer
