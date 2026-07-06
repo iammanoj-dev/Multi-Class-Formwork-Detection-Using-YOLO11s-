@@ -39,10 +39,16 @@ The dataset was manually annotated using LabelImg and structured into train, val
 - Custom dataset pipeline with YOLO format
 
 - ### ▶️ Demo Images
-- <img width="735" height="588" alt="plastic_045 (1)" src="https://github.com/user-attachments/assets/e22eec41-0f30-47cb-9257-6e81b9f1d1d4" />
-  <img width="500" height="333" alt="wood_080" src="https://github.com/user-attachments/assets/fa07a1e6-4925-4bc0-93e9-cb1f73e55100" />
-  <img width="447" height="447" alt="aluminum_024" src="https://github.com/user-attachments/assets/c2c8f905-bdb3-4841-ad7b-a2b825c6cf01" />
-  <img width="505" height="380" alt="steel_012" src="https://github.com/user-attachments/assets/8ddc2abf-6763-4ff4-a016-22655ec32a6f" />
+
+<div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+
+  <img src="https://github.com/user-attachments/assets/afd5c1fb-ee23-49ba-9676-b0b327098ace" width="48%" />
+  <img src="https://github.com/user-attachments/assets/d795f13b-9002-42b6-bb1d-51a35f338308" width="48%" />
+
+  <img src="https://github.com/user-attachments/assets/e9b4aa96-e545-40bf-b2d6-6aeb16933f37" width="48%" />
+  <img src="https://github.com/user-attachments/assets/38d90c9d-1716-45e4-819d-37d0be02b95d" width="48%" />
+
+</div>
 
 
 ### 🏁 Outcome
